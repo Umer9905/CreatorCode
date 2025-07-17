@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-icon {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 2px;
+}
+
+.logo-text {
+  font-family: serif;
+  font-style: italic;
+}
+
+.brand-name {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.login-btn {
+  background-color: #00998c;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: rgb(40, 71, 57); /* changes to red on hover */
+  cursor: pointer;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.services-bin:hover,
+.works-bin:hover,
+.about-bin:hover,
+.career-btn:hover {
+  color: #004899;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+.text-block {
+  flex: 1 1 40%;
+}
+
+.text-block h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-block p {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn.primary-btn {
+  background-color: #00998c;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn.primary-btn:hover {
+  background-color: #007f70;
+}
+
+.image-block {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.image-block img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 800px) {
+  .content-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .text-block, .image-block {
+    max-width: 100%;
+  }
+
+  .image-block {
+    margin-bottom: 40px;
+  }
+}
+
+.custom-img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover; /* ensures the image fills the box without distortion */
+  border-radius: 8px; /* optional rounded corners */
+}
+
+.thank-you {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you p {
+  font-size: 1rem;
+  color: #333;
+}

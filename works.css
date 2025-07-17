@@ -1,0 +1,71 @@
+body {
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.works-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works-section h2 {
+  color: #005f73;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.work-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 350px;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.work-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.work-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.work-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.3rem;
+  color: #0a3d62;
+}
+
+.work-card p {
+  padding: 0 20px 20px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #073b4cdd;
+}

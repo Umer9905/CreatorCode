@@ -1,0 +1,116 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fbff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.career-hero {
+  background: url('https://via.placeholder.com/1600x500?text=Join+Our+Tech+Team') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.career-hero-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+.career-hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.career-hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Section Title */
+.career-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #005f73;
+  margin-bottom: 40px;
+}
+
+/* Job Cards */
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.job-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+  transition: transform 0.3s ease;
+  border-left: 5px solid #005f73;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+}
+
+.job-card h3 {
+  color: #0a3d62;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.job-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.job-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005f73;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.job-card a:hover {
+  background-color: #007b91;
+}

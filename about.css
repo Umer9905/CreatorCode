@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8fbff;
+  color: #484747;
+  line-height: 1.6;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('https://via.placeholder.com/1600x600?text=Code+Creators+Team') no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Container Wrapper */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* About Section */
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #005f73;
+  margin-bottom: 20px;
+}
+
+.about-section .intro {
+  font-size: 1.1rem;
+  color: #484747;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Services Section */
+.services-section h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #005f73;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 25px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #0a3d62;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #444;
+}
